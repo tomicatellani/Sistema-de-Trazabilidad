@@ -1,0 +1,105 @@
+#login-container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  padding: 0;
+  animation-name: fadeOut;
+  animation-play-state: paused;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeOut{
+  0% {opacity: 100;}
+  100% {opacity: 0;}
+}
+
+#title-and-form{
+  width: 552px;
+  height: auto;
+}
+
+.form{
+  align-items: center;
+}
+
+.input-container{
+  width: 100%;
+  height: auto;
+}
+
+.input{
+    padding: 0;
+    padding-left: 18px;
+    box-sizing: border-box;
+    display: inherit;
+    width: 100%;
+    height: 53px;
+    color: var(--black);
+    background-color: var(--black-opacity);
+    font-family: var(--font-family);
+    font-weight: Light;
+    font-size: 20px;
+    border: 0;
+    border-radius: 1.5px;
+    outline-color: var(--orange);
+    outline-width: thin;
+}
+
+.label{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 36px;
+    font-size: 24px;
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
+.incorrect-container{
+  width: 100%;
+  height: 12px;
+  margin-top: 3px;
+}
+
+.incorrect{
+  font-family: var(--font-family);
+  color: var(--error-color);
+  font-size: 12px;
+  font-weight: Thin;
+  opacity: 1;
+  display: none;
+}
+
+.submit-container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 48px;
+}
+
+.register-container{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-top: 8px;
+}
+
+.isotype-container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.isotype{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 20vh;
+  height: auto;
+  margin: auto 0 0;
+}

@@ -1,0 +1,8 @@
+#botonera-lotes{
+    border: 0;
+    display: grid;
+}
+
+#contenedor-botonera-lotes{
+    padding-top: 25vh;
+}

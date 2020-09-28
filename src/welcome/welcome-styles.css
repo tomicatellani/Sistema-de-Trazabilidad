@@ -1,0 +1,38 @@
+:root{
+    --color2: var(--white);
+    --color1: var(--yellow);
+}
+
+#welcome-h1{
+    color: inherit;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+#boton{
+    background-color: var(--dark-green);
+}
+
+#message-container{
+    width: 100vw;
+    height: 100vh;
+    /*animation: fadeIn 1s ease-in-out 0s 1 normal forwards, changeColor 2s ease-in-out 2s 1 normal forwards;*/
+    color: var(--color2);
+}
+
+@keyframes fadeIn{
+    from {opacity: 0}
+    to {opacity: 100}
+}
+
+@keyframes changeColor{
+    0%{background-color: var(--color1)}
+    35%{background-color: var(--color2); color: var(--color1)}
+    85%{background-color: var(--color2); color: var(--color1)}
+    100%{background-color: var(--color2); color: var(--color2)}
+}
+#welcome-bold{
+    font-weight: 900;
+  }

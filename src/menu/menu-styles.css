@@ -1,0 +1,28 @@
+body{
+    height: fit-content;
+}
+
+#botonera{
+    width: 34vw;
+    height: 100%;
+    border: 0;
+    background-color: inherit;  
+    background-color: red;
+}
+
+.btn-botonera{
+    margin: 10px;
+
+}
+
+#contenedor-botonera{
+    padding-top: 25vh;
+    display: grid;
+    justify-items: center;
+}
+
+#fert-y-agroq{
+    width: fit-content;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+}

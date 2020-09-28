@@ -1,0 +1,130 @@
+/*Googlear los tamaños de letra */
+
+/*Each color is assigned to a variable*/
+
+:root {
+  --yellow: #fdca38;
+  --orange: #eca645;
+  --light-green: #a0c421;
+  --dark-green: #669833;
+  --black: #333333;
+  --black-opacity: rgba(51, 51, 51, 0.12);
+  --white: #ffffff;
+  --error-color: #db2323;
+  --font-family: Raleway;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--white);
+  height: 100vh;
+  width: 100vw;
+}
+
+.center-childs {
+  display: grid;
+  place-items: center;
+}
+
+@keyframes dissapear {
+  0% {
+    opacity: 100;
+  }
+
+  80% {
+    opacity: 100;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.logotype-container {
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  position: flex;
+  animation-name: dissapear;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  -webkit-user-drag: none;
+}
+
+.main-title {
+  font-size: 91px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 40px;
+  justify-content: center;
+  display: flex;
+}
+
+.non-selectable {
+  user-select: none;
+}
+
+/* Transition to buttons from dark green to light green */
+.btn {
+  transition: background-color 500ms ease-in-out;
+  background-color: var(--dark-green);
+  font-family: var(--font-family);
+  color: var(--white);
+  padding-bottom: 4px;
+  border: 0;
+  outline: none;
+  border-radius: 1.5px;
+  font-size: 24px;
+  font-weight: 700;
+  height: 38px;
+  width: 183px;
+}
+
+.btn-texto {
+  color: var(--dark-green);
+  background-color: inherit;
+  outline: none;
+  border: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: var(--light-green);
+}
+
+#botonera-menu {
+  width: 34vw;
+  border: 0;
+  background-color: inherit;
+  background-color: red;
+  padding: 0;
+}
+
+.btn-botonera {
+  margin: 10px;
+}
+
+#contenedor-botonera-menu {
+  padding-top: 25vh;
+  display: grid;
+  justify-items: center;
+}
+
+#fert-y-agroq {
+  width: fit-content;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+}
+
+/**********************************************/
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+}

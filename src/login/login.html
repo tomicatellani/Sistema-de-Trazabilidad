@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag --> 
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    
+    <!-- Character encoding standard --> 
+    <meta charset="utf-8">
+    
+    <title>Sistema de Trazabilidad</title>
+    <!-- Link to the master css file -->
+    <link rel="stylesheet" href="login-styles.css">
+    <link rel="stylesheet" href="../app/master.css">
+    <!-- Link to Google Fonts to get the typhography (Raleway) and its weights (Light, Thin, Regular, Semibold, Bold, etc.)-->
+    <!-- It may be nesessary to get rid of this link to not depend on Internet -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>  
+    <div class="center-childs non-selectable" id="login-container">
+      <div id="title-and-form">
+        <h1 class="main-title">Login</h1>
+        <!-- Using "form" it can be accessed to "input" tags for common text fields, password fields, submit button, etc. -->
+        <form class="form" name="login-form" method="post" autocomplete="off" id="form">
+          <div class="input-container">
+            <label class="label">Usuario</label>
+            <input type="text" class="input" id="user" oninput="incorrect('hide')"/>  <!-- Hides the message "Credenciales incorrectas" when the text changes (that means that the user is trying to write it again)-->
+          </div>
+          <div class="input-container">
+            <label class="label">Clave</label>
+            <input type="password" class="input" id="pass" oninput="incorrect('hide')"/> <!-- Hides the message "Credenciales incorrectas" when the text changes (that means that the user is trying to write it again)-->
+          </div>
+          <div class="incorrect-container">
+            <label class="incorrect" id="incorrect">Credenciales incorrectas</label>
+          </div>
+          <div class="submit-container">
+            <input type="submit" value="Acceder" class="btn" id="submit"/>
+          </div>
+          <div class="register-container">
+            <button type="button" name="button" class="btn-texto">Registrar</button>
+          </div>
+        </form>
+      </div>
+      <!-- Since the div fills all the window the objects under it cannot be clicked -->
+      <div class="isotype-container non-selectable" draggable="false" style="pointer-events: none"> 
+          <img src="../resourses/isotipo-cortado.svg" class="isotype" draggable="false" />
+      </div>
+    </div>
+
+      <!-- Fix one bug of "transition"'s css property when the page is reloaded -->
+      <script type="text/javascript" src="login-script.js"></script>
+      <script type="text/javascript" src="../main.js"></script>
+  </body>
+</html>

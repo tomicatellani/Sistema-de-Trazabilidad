@@ -1,0 +1,26 @@
+- acomodé las botoneras. el error estaba en que los nombres de las clases de botonera.html y lotes.html eran iguales, y desde lotes se linkeaba el .css de botonera.html
+- hice lotes-script.js
+- borré los botonera-styles.css pq no se usaban y estaba dando error (explicado en línea 2)
+- acomodé botonera-script.js para usarla con parámetros
+
+- centré el contenedor de lotes y logré sacar las scrollbars 
+
+hay que:
+    - agregar logo a botonera.html
+    - pasar los tamaños de letra a em y rem
+    - ver qué onda el botón "atrás" de botonera.html !!!
+    - ✨no morir en el intento✨
+    - usar el plugin beautify para hacer todo mas legible
+    - ocultar la barra de electron (por el momento no, para abrir las opciones de desarrollador)
+    - pasar nombre de clases e ids a un archivos UTILS / depurar los estilos, id y clases no usadas
+    - buscar cómo hacer el login más seguro
+
+POSIBLES ERORRES:
+    - cambié el nombre de la carpeta master por app
+    - cambié el nombre de pantallas por sistema de trazabilidad
+
+SOLUCION
+    - pasar todos los .js a un mismo archivo .js
+
+ideas:
+    - meter el logo del colegio
