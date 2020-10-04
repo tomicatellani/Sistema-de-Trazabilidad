@@ -10,7 +10,7 @@ document.getElementById("botonera-lotes").onload = function () {
     let b = a.contentDocument ? a.contentDocument : a.contentWindow.document;
     //Desde 'b' se obtienen todos los elementos con la clase ".btn-botonera"
     b.querySelectorAll(".btn-botonera").forEach(item => {
-        //A cada botón se le asigna un listener para que desate un evento cuando se le hace clic
+        //A cada botón se le asigna un listener para que desate un evento cuando se le hace click
         item.addEventListener('click', event => {
             //Se llama a la función botonPresionado y se envía como parámetro la id del botón presionado
             botonPresionado(item.id);
@@ -63,4 +63,6 @@ function visualizar(){
 //Función que se llama cuando el botón "Atrás" es presionado 
 function atras(){
     alert("Pantalla anterior");
+    document.getElementById("pantalla-lotes").style.display = "display";
+    document.getElementById("pantalla-login").style.display = "display";
 }

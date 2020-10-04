@@ -1,5 +1,5 @@
-function changeName(id, nombre) {
-    var iframe = document.getElementById(id);
+function changeName(iFrameID, nombre) {
+    var iframe = document.getElementById(iFrameID);
     var doc = iframe.contentDocument ? iframe.contentDocument : iframe.contentWindow.document;
     doc.getElementById('titulo').innerHTML = nombre;
 }
