@@ -16,7 +16,7 @@ document.getElementById("botonera-lotes").onload = function () {
             botonPresionado(item.id);
         })
     })
-}
+} 
 
 //Actúa en función del botón que se presione 
 function botonPresionado(boton) {
