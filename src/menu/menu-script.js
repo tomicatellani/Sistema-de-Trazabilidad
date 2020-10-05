@@ -3,8 +3,6 @@ document.getElementById("botonera").onload = function(){
     changeName("Menú principal");
 }
 
-document.querySelectorAll(".btn-botonera").forEach(item => {
-    item.addEventListener('click', event => {
-        pantallaMenu(item);
-    })
-})
+document.getElementById("lotes").onclick = () => {
+    
+}

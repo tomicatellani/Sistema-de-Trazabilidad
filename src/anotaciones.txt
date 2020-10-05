@@ -7,19 +7,14 @@
 
 hay que:
     - agregar logo a botonera.html
-    - pasar los tamaños de letra a em y rem
-    - ver qué onda el botón "atrás" de botonera.html !!!
-    - ✨no morir en el intento✨
+    - pasar los tamaños de letra a em y rems
     - usar el plugin beautify para hacer todo mas legible
     - ocultar la barra de electron (por el momento no, para abrir las opciones de desarrollador)
-    - pasar nombre de clases e ids a un archivos UTILS / depurar los estilos, id y clases no usadas
+        - tener en cuenta poner el nombre de la sección adelante de la id para evitar problemas con muchos .js en el mismo .html (por ej. "btn-lotes" a "menu-btn-lotes")
+        - pasar nombre de clases e ids a un archivos UTILS / depurar los estilos, id y clases no usadas
     - buscar cómo hacer el login más seguro
 
-POSIBLES ERORRES:
-    - cambié el nombre de la carpeta master por app
-    - cambié el nombre de pantallas por sistema de trazabilidad
-
-SOLUCION
+POSIBLE SOLUCION A FUTUROS PROBLEMAS
     - pasar todos los .js a un mismo archivo .js
 
 ideas:

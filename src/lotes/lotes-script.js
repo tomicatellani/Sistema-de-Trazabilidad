@@ -16,7 +16,7 @@ document.getElementById("botonera-lotes").onload = function () {
             botonPresionado(item.id);
         })
     })
-} 
+}
 
 //Actúa en función del botón que se presione 
 function botonPresionado(boton) {
@@ -33,36 +33,25 @@ function botonPresionado(boton) {
         case "visualizar":
             visualizar();
             break;
-        //En caso de que la id del botón presionado sea "atras"...
-            case "atras":
-            atras();
-            break;
         //En caso de que el parámetro no coincida con ninguno de los casos anteriores...
         default:
-            alert("Chequear lotes-script linea 14")
+            alert("Chequear lotes-script función botonPresionado()");
             break
     }
 }
 
-//Función que se llama cuando el botón "Carga" es presionado 
+//Función que se llama cuando el botón "Carga" es presionado
 function cargar(){
     //Hacer la pantalla de cargar (ver si pop up o común)
     alert("Pantalla de carga");
 }
 
-//Función que se llama cuando el botón "Modificar" es presionado 
+//Función que se llama cuando el botón "Modificar" es presionado
 function modificar(){
     alert("Pantalla de modificar");
 }
 
-//Función que se llama cuando el botón "Visualizar" es presionado 
+//Función que se llama cuando el botón "Visualizar" es presionado
 function visualizar(){
     alert("Pantalla de visualizar");
-}
-
-//Función que se llama cuando el botón "Atrás" es presionado 
-function atras(){
-    alert("Pantalla anterior");
-    document.getElementById("pantalla-lotes").style.display = "display";
-    document.getElementById("pantalla-login").style.display = "display";
 }

@@ -6,3 +6,8 @@
 #contenedor-botonera-lotes{
     padding-top: 25vh;
 }
+
+#lotes-atras{
+    font-size: 2vh;
+    text-decoration: none;
+}
