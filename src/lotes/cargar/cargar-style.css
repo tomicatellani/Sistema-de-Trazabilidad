@@ -1,0 +1,34 @@
+#contenedor-form-cargar{
+    width: 100vw;
+    height: 100vh;
+}
+
+#form-cargar{
+    margin-bottom: 30vh;
+    margin-right: 20vw;
+}
+
+#cont-nombre-del-campo-cargar{
+    margin-bottom: 10vh;
+}
+
+.contenedor-field-cargar{
+    margin: 1vh;
+}
+
+.label-cargar{
+    margin-right: 2vh;
+    font-weight: 700;
+    font-size: 30pt;
+}
+
+#select-cargar{
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.input-cargar{
+    width: 15vw;
+    height: 3vh;
+    padding-left: 1vh;
+}

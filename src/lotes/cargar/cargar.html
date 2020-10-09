@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../app/master.css">
+    <link rel="stylesheet" href="cargar-style.css">
+    <title>cargarr</title>
+</head>
+<body>
+    <div id="contenedor-form-cargar" class="center-childs non-selectable">
+        <form id="form-cargar">
+            <div class="contenedor-field-cargar" id="cont-nombre-del-campo-cargar">
+                <label class="label-cargar">Nombre del campo</label>
+                <select id="select-cargar" class="input-cargar">
+                    <option>Opción 1</option> <!--Googlear las propiedades-->
+                    <option>Opción 2</option>
+
+                    <!--Poner las opciones después que se cumpla la promesa de la query a la bdd con .innerHTML-->
+                </select>
+            </div>
+
+
+            
+            <div>
+                <div class="contenedor-field-cargar">
+                    <label class="label-cargar">Número de lote</label> <!--Validar que solo sean números-->
+                    <input type="text" class="input-cargar">    
+                </div>
+                
+                <div class="contenedor-field-cargar">
+                    <label class="label-cargar">Cantidad de hectáreas</label> <!--Validar que solo sean números-->
+                <label class="label-cargar">(del lote N.º 6)</label> <!--Pasar a chico-->
+                <input type="text" class="input-cargar">
+                </div>
+                
+                <div class="contenedor-field-cargar">
+                    <label class="label-cargar">Cultivo</label>
+                <input type="text" class="input-cargar">
+                </div>
+                
+                <div class="contenedor-field-cargar">
+                    <button class="btn">Aceptar</button>
+                    <button class="btn">Cancelar</button>
+                </div>
+                
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
