@@ -19,3 +19,6 @@ POSIBLE SOLUCION A FUTUROS PROBLEMAS
 
 ideas:
     - meter el logo del colegio
+
+COSAS A TENER EN CUENTA:
+    - verificar el peso de la tipografía de los botones, labels, etc del diseño en "Pantallas.ai"
