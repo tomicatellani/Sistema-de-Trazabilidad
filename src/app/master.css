@@ -2,6 +2,11 @@
 
 /*Each color is assigned to a variable*/
 
+::selection{
+  background-color: var(--light-green);
+  color: white;
+}
+
 :root {
   --yellow: #fdca38;
   --orange: #eca645;
