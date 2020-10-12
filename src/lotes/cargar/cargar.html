@@ -2,51 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../app/master.css">
-    <link rel="stylesheet" href="cargar-style.css">
-    <title>cargarr</title>
 </head>
-<body>
-    <div id="contenedor-form-cargar" class="center-childs non-selectable">
-        <form id="form-cargar">
-            <div class="contenedor-field-cargar" id="cont-nombre-del-campo-cargar">
-                <label class="label-cargar">Nombre del campo</label>
-                <select id="select-cargar" class="input-cargar">
-                    <option>Opción 1</option> <!--Googlear las propiedades-->
-                    <option>Opción 2</option>
+<body class="center-childs">
+    <form id="form-cargar" class="non-selectable"> <!--Googler el atributo "action"-->
+        <div id="cont-labels-cargar">
+            <label for="campo">Campo</label>
+            <label for="lote">N.º Lote</label>
+            <label for="hectareas">Hectáreas</label>
+            <label for="cultivo">Cultivo</label>
+        </div>
 
-                    <!--Poner las opciones después que se cumpla la promesa de la query a la bdd con .innerHTML-->
-                </select>
-            </div>
+        <div id="cont-inputs-cargar">
+            <select class="input-cargar" id="select-campo-cargar"> 
+                <option value="campo1">Campo 1</option>
+                <option value="campo2">Campo 2</option>
+            </select>
+            <input type="text" class="input-cargar">
+            <input type="text" class="input-cargar">
+            <input type="text" class="input-cargar">
+        </div>
 
+        <div id="cont-botones-cargar">
+            <button class="btn">Aceptar</button>
+            <button class="btn">Cancelar</button>    
+        </div>
 
-            
-            <div>
-                <div class="contenedor-field-cargar">
-                    <label class="label-cargar">Número de lote</label> <!--Validar que solo sean números-->
-                    <input type="text" class="input-cargar">    
-                </div>
-                
-                <div class="contenedor-field-cargar">
-                    <label class="label-cargar">Cantidad de hectáreas</label> <!--Validar que solo sean números-->
-                <label class="label-cargar">(del lote N.º 6)</label> <!--Pasar a chico-->
-                <input type="text" class="input-cargar">
-                </div>
-                
-                <div class="contenedor-field-cargar">
-                    <label class="label-cargar">Cultivo</label>
-                <input type="text" class="input-cargar">
-                </div>
-                
-                <div class="contenedor-field-cargar">
-                    <button class="btn">Aceptar</button>
-                    <button class="btn">Cancelar</button>
-                </div>
-                
-            </div>
-            
-        </form>
-    </div>
-    
+    </form>
+
 </body>
 </html>
