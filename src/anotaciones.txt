@@ -13,6 +13,8 @@ hay que:
         - tener en cuenta poner el nombre de la sección adelante de la id para evitar problemas con muchos .js en el mismo .html (por ej. "btn-lotes" a "menu-btn-lotes")
         - pasar nombre de clases e ids a un archivos UTILS / depurar los estilos, id y clases no usadas
     - buscar cómo hacer el login más seguro
+    - la fuente tiene que estar instalada en la pc o ser incluída en cada uno de los .html con <link> a GoogleFonts. Obviamente la tengo instalada. Arreglar 
+    - PASAR LAS BOTONERAS A GRID!!!
 
 POSIBLE SOLUCION A FUTUROS PROBLEMAS
     - pasar todos los .js a un mismo archivo .js
