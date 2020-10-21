@@ -2,6 +2,7 @@
 
 /*Each color is assigned to a variable*/
 
+/*El texto se selecciona con color verde*/
 ::selection{
   background-color: var(--light-green);
   color: white;
@@ -77,16 +78,19 @@ body {
 .btn {
   transition: background-color 500ms ease-in-out;
   background-color: var(--dark-green);
-  font-family: var(--font-family);
   color: var(--white);
-  padding-bottom: 4px;
   border: 0;
   outline: none;
   border-radius: 1.5px;
+  font-family: var(--font-family);
   font-size: 24px;
   font-weight: 700;
-  height: 38px;
-  width: 183px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 0.2vh;
+  width: 100%; /*Si causa problemas puede ponerse en las tags a{} y sacarlo de la clase .btn*/
+  height: 100%;
 }
 
 .btn-texto {
@@ -107,7 +111,7 @@ body {
   width: 34vw;
   border: 0;
   background-color: inherit;
-  background-color: red;
+  background-color: var(--white);
   padding: 0;
 }
 
