@@ -1,0 +1,29 @@
+#form-cargar{
+    width: 35%;
+    height: 20%;
+    padding-bottom: 20%;
+    padding-right: 40%;
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: repeat(5, 30%);
+    font-family: var(--font-family);
+    font-size: 30pt;
+    font-weight: 700;
+}
+
+#cont-botones-cargar{
+    grid-column: 2/3;
+}
+
+.centered{
+    align-self: center;
+}
+
+.input-cargar{
+    padding-left: 0.5rem;
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 500;
+}

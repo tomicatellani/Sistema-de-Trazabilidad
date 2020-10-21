@@ -4,34 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cargar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cargar-style.css">
     <link rel="stylesheet" href="../../app/master.css">
 </head>
 <body class="center-childs">
-    <form id="form-cargar" class="non-selectable"> <!--Googler el atributo "action"-->
-        <div id="cont-labels-cargar">
-            <label for="campo">Campo</label>
-            <label for="lote">N.º Lote</label>
-            <label for="hectareas">Hectáreas</label>
-            <label for="cultivo">Cultivo</label>
+    <form id="form-cargar" class="non-selectable"> <!--Googler el atributo action-->
+
+        <div class="centered">
+            <label for="campo">Campo</label> <!--Googler el atributo for-->
         </div>
 
-        <div id="cont-inputs-cargar">
+        <div>
             <select class="input-cargar" id="select-campo-cargar"> 
                 <option value="campo1">Campo 1</option>
                 <option value="campo2">Campo 2</option>
             </select>
-            <input type="text" class="input-cargar">
-            <input type="text" class="input-cargar">
+        </div>
+
+        <div class="centered">
+            <label for="lote">N.º Lote</label>
+        </div>
+
+        <div>
             <input type="text" class="input-cargar">
         </div>
 
-        <div id="cont-botones-cargar">
+        <div class="centered">
+            <label for="hectareas">Hectáreas</label>
+        </div>
+
+        <div>
+            <input type="text" class="input-cargar">
+        </div>
+
+        <div class="centered">
+            <label for="cultivo">Cultivo</label>
+        </div>
+
+        <div>
+            <input type="text" class="input-cargar">
+        </div>
+        
+
+        <div id="cont-botones-cargar" class="centered">
             <button class="btn">Aceptar</button>
             <button class="btn">Cancelar</button>    
+            <!--Agregar botón de atrás y probar la idea del menú en la esquina (revisar la idea en pantallas.ai)-->
         </div>
 
     </form>
 
+    <script src="cargar-script.js"></script>
 </body>
 </html>
