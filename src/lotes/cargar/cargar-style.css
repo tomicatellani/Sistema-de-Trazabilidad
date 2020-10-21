@@ -1,3 +1,7 @@
+input:focus{
+    border-color: var(--orange);
+}
+
 #form-cargar{
     width: 35%;
     height: 20%;
