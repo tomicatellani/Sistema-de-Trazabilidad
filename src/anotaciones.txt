@@ -15,6 +15,7 @@ hay que:
     - buscar cómo hacer el login más seguro
     - la fuente tiene que estar instalada en la pc o ser incluída en cada uno de los .html con <link> a GoogleFonts. Obviamente la tengo instalada. Arreglar 
     - PASAR LAS BOTONERAS A GRID!!!
+    - eliminar resourses/botonera
 
 POSIBLE SOLUCION A FUTUROS PROBLEMAS
     - pasar todos los .js a un mismo archivo .js
