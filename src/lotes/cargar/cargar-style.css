@@ -9,13 +9,13 @@ input:focus{
     padding-right: 40%;
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-rows: repeat(5, 30%);
+    grid-template-rows: repeat(6, 30%);
     font-family: var(--font-family);
     font-size: 30pt;
     font-weight: 700;
 }
 
-#cont-botones-cargar{
+#cont-boton{
     grid-column: 2/3;
 }
 
@@ -25,6 +25,7 @@ input:focus{
 
 .input-cargar{
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
     height: 35px;
     width: 100%;
     box-sizing: border-box;
