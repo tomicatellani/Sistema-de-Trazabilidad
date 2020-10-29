@@ -1,13 +1,27 @@
+a{
+    text-decoration: none;
+}
+
 #botonera-lotes{
     border: 0;
     display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(150px, 200px));
+    grid-template-rows: repeat(2, calc(30/9));
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 #contenedor-botonera-lotes{
     padding-top: 25vh;
+    display: grid;
+    justify-items: center;
+    width: 100%;
 }
 
 #lotes-atras{
     font-size: 2vh;
     text-decoration: none;
+    grid-column: 2/3;
 }
