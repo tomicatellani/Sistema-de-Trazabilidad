@@ -1,4 +1,3 @@
-- acomodé las botoneras. el error estaba en que los nombres de las clases de botonera.html y lotes.html eran iguales, y desde lotes se linkeaba el .css de botonera.html
 - hice lotes-script.js
 - borré los botonera-styles.css pq no se usaban y estaba dando error (explicado en línea 2)
 - acomodé botonera-script.js para usarla con parámetros
