@@ -14,7 +14,7 @@ function createWindow(){
     fullscreen: true
     //Agregar ícono para la barra
   })
-  window.loadFile("lotes/cargar/cargar.html")
+  window.loadFile("lotes/lotes.html")
   window.on('closed', () => {
     window = null;
   })
