@@ -26,7 +26,7 @@
         </div>
 
         <div>
-            <input type="number" class="input-cargar" id="lotes-cargar-numero-lote" required>
+            <input type="number" class="input-cargar" id="lotes-cargar-numero-lote" required min="0" step="1">
         </div>
 
         <div class="centered">
@@ -34,7 +34,7 @@
         </div>
 
         <div>
-            <input type="number" class="input-cargar" id="lotes-cargar-hectareas" required>
+            <input type="number" class="input-cargar" id="lotes-cargar-hectareas" required min="0" step="1">
         </div>
 
         <div class="centered">
@@ -42,7 +42,11 @@
         </div>
 
         <div>
-            <input type="text" class="input-cargar" id="lotes-cargar-cultivo" required>
+            <select class="input-cargar" id="lotes-cargar-select-cultivo" required> 
+                <option value="cultivo1">Soja PIONEER </option>
+                <option value="cultivo2">Maíz</option>
+                <option value="cultivo3">Girasol</option>
+            </select>
         </div>
         
         <div id="cont-boton" class="centered">
@@ -52,6 +56,10 @@
 
         <div id="cont-boton" class="centered">
             <button class="btn" id="lotes-cargar-btn-cancelar" type="reset">Cancelar</button> 
+        </div>
+
+        <div id="carga-lotes-atras">
+            <a href="../lotes.html" class="non-selectable btn-texto">Atrás</a>
         </div>
     </form>
 
