@@ -1,5 +1,5 @@
 'use strict';
-const { app, BrowserWindow, BrowserView } = require('electron');
+const { app, BrowserWindow, remote } = require('electron');
 const path = require('path');
 
 //If the process is on production, then reloads automatically the window on __dirname
