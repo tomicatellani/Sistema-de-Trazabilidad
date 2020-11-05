@@ -48,3 +48,11 @@ function welcome(){
   document.getElementById('user').value = "";
   document.getElementById('pass').value = "";
 }
+
+//Cuando la animación termina...
+document.getElementById("login-container").addEventListener("animationend", () => {
+  let a = document.createElement('a'); //Crea una etiqueta <a>
+  a.setAttribute("href", "../welcome/welcome.html"); //Asigna la ruta
+  document.body.appendChild(a); //La incluye en el body
+  a.click(); //Y la clickea
+});
