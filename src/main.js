@@ -14,7 +14,7 @@ function createWindow(){
     fullscreen: true
     //Agregar ícono para la barra
   })
-  window.loadFile("menu/menu.html")
+  window.loadFile("login/login.html")
   window.on('closed', () => {
     window = null;
   })
