@@ -1,5 +1,4 @@
-document.getElementById('welcome-h1').innerHTML = "Bienvenido,<span id='welcome-bold'></span>";
-document.getElementById('welcome-bold').innerHTML = " Admin" //Here will be name returned by the database according to the username on login.js
+document.getElementById('welcome-bold').innerHTML = "&nbsp " //Here will be name returned by the database according to the username on login.js
 
 document.getElementById("welcome-h1").addEventListener("animationend", () => {
   document.getElementById("message-container").style.animationPlayState = "running";
