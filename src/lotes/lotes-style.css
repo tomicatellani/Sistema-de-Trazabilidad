@@ -1,7 +1,3 @@
-a{
-    text-decoration: none;
-}
-
 #botonera-lotes{
     border: 0;
     display: grid;
@@ -21,7 +17,5 @@ a{
 }
 
 #lotes-atras{
-    font-size: 2vh;
-    text-decoration: none;
     grid-column: 2/3;
 }
