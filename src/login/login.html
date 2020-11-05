@@ -22,11 +22,11 @@
         <!-- Using "form" it can be accessed to "input" tags for common text fields, password fields, submit button, etc. -->
         <form class="form" name="login-form" method="post" autocomplete="off" id="form">
           <div class="input-container">
-            <label class="label">Usuario</label>
-            <input type="text" class="input" id="user" oninput="incorrect('hide')"/>  <!-- Hides the message "Credenciales incorrectas" when the text changes (that means that the user is trying to write it again)-->
+            <label class="label" for="user">Usuario</label>
+            <input type="text" class="input" id="user" oninput="incorrect('hide')" autofocus/>  <!-- Hides the message "Credenciales incorrectas" when the text changes (that means that the user is trying to write it again)-->
           </div>
           <div class="input-container">
-            <label class="label">Clave</label>
+            <label class="label" for="pass">Clave</label>
             <input type="password" class="input" id="pass" oninput="incorrect('hide')"/> <!-- Hides the message "Credenciales incorrectas" when the text changes (that means that the user is trying to write it again)-->
           </div>
           <div class="incorrect-container">
