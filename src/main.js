@@ -1,6 +1,11 @@
 'use strict';
 const { app, BrowserWindow, remote } = require('electron');
 const path = require('path');
+var requirejs = require('requirejs');
+
+requirejs.config({
+    nodeRequire: require
+});
 
 //If the process is on production, then reloads automatically the window on __dirname
 if(process.env.NODE_ENV !== 'production'){
