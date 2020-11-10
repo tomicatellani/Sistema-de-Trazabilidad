@@ -1,38 +1,56 @@
-//Con form method=POST/GET es mejor, pero así es más fácil 
+try {
+    alert("en try")
+    const mysql = requirejs('mysql');
+} catch (error) {
+    alert(error)
+}
+
+let campo = document.getElementById("lotes-cargar-select-campo");
+let lote = document.getElementById("lotes-cargar-numero-lote");
+let hectareas = document.getElementById("lotes-cargar-hectareas");
+let cultivo = document.getElementById("lotes-cargar-select-cultivo");
+let form = document.getElementById("form-lotes-cargar");
 
 //Cuando se aprieta aceptar...
 document.getElementById("lotes-cargar-btn-aceptar").addEventListener('click', () => {
-    let campo = document.getElementById("lotes-cargar-select-campo");
-    let lote = document.getElementById("lotes-cargar-numero-lote");
-    let hectareas = document.getElementById("lotes-cargar-hectareas");
-    let cultivo = document.getElementById("lotes-cargar-cultivo");
-
-    //Valida que todos los inputs estén completos. De ser así asigna 'true' a la variable
-    loteCompleto = validarVacios(lote);
-    hectareasCompleto = validarVacios(hectareas);
-    cultivoCompleto = validarVacios(cultivo);
-
-    //Si todas las variables son 'true' (es decir que están todos los inputs completos) muestra un mensaje (que debe reemplazarse por la query a la bdd más tarde)
-    if(loteCompleto == true && hectareasCompleto == true && cultivoCompleto == true){
-        alert("Campo: " + campo.value + ". \nLote: " + lote.value + ". \nHectáreas: " + hectareas.value + ". \nCultivo: " + cultivo.value + ".");   //Reemplazar por la query a bdd
-    }
+    //Valida que todos los inputs estén completos
+    validarVacios(campo)
+    validarVacios(lote);
+    validarVacios(hectareas);
+    validarVacios(cultivo);
 });
 
-//Valida que no haya espacios en blanco en los campos. De haberlos retorna true (que es asignado a una variable para validar que cuando todas sean verdaderas se realice la query)
+//Cuando el formulario hace el submit...
+form.addEventListener("submit", async () => {
+    alert("entra");
+    //LOT_COD
+    //LOT_NUMERO
+	//LOT_CULTIVO
+	//LOT_HECTAREAS
+    //LOT_CAM_COD
+
+    const connection = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "toca2002",
+        database: "sdtdl_bdd"
+    });
+
+    await connection.query("INSERT INTO LOTES (LOT_COD, LOT_NUMERO, LOT_CULTIVO, LOT_HECTAREAS) VALUES ?", 1, 1, "maiz", 2);
+    const data = await connection.query("SELECT * FROM LOTES");
+    alert(data);
+})
+
+
+//Cuando el input pasado por parámetro es inválido pide al usuario que lo complete, cuando se ingresa un nuevo valor el mensaje desaparece
 function validarVacios(input){
-    if (input.checkValidity() == false) {
-        //Si hay algún input está vacío agisna un listener para que al escribir se borre el mensaje de error
-        input.addEventListener("input", () => {
-            if(!input.checkValidity()){
-                input.setCustomValidity("");
-            }
-        });
-        //Mensaje de error si un input está vacío
-        input.setCustomValidity("¡Completar!");
-    } else {
-        //Si no hay campos vacíos retorna 'true'
-        return true;
-    } 
+    input.addEventListener("invalid", () => {
+        input.setCustomValidity("Por favor, completar este campo")
+    });
+
+    input.addEventListener("input", () => {
+        input.setCustomValidity("");
+    });
 }
 
 //Previene que se ingresen símbolos
