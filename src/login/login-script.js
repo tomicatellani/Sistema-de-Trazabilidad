@@ -1,8 +1,8 @@
-//Declaration of user and password of the administrator
+//Usuario de login provisional
 var adminUserCredential = "admin";
 var adminPassCredential = "admin";
 
-//When submit ("Accdeder") button is pressed...
+//When submit ("Acceder") button is pressed...
 document.getElementById('form').onsubmit = function() {
 
   //Gets what was written in the user and password fields
