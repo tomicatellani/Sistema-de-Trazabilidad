@@ -1,2 +1,4 @@
 src/node_modules
 diseño
+.DS_Store
+src/.DS_Store
