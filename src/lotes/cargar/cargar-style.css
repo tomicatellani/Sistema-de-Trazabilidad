@@ -2,7 +2,7 @@ input:focus{
     border-color: var(--orange);
 }
 
-#form-cargar{
+#form-lotes-cargar{
     width: 35%;
     height: 20%;
     padding-bottom: 20%;
@@ -31,6 +31,8 @@ input:focus{
     box-sizing: border-box;
     font-family: inherit;
     font-weight: 500;
+    outline-color: var(--orange);
+    outline-width: thin;
 }
 
 #carga-lotes-atras{
